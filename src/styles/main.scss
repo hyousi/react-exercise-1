@@ -40,3 +40,47 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.app-header {
+  text-align: center;
+  margin-top: 75px;
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    margin-top: -75px;
+  }
+  h1 {
+    padding: $base-padding;
+  }
+  .break-line {
+    border: 2px solid $gray-border-color;
+    margin: $base-padding 0;
+  }
+}
+
+.app-content {
+  section {
+    > * {
+      padding: $base-padding $base-padding*2;
+    }
+    li {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: $base-margin;
+      .year {
+        width: 8%;
+        font-weight: bold;
+      }
+      .experience {
+        width: 100%;
+        background-color: $gray-border-color;
+        padding: $base-padding;
+        p:first-child {
+          padding-bottom: $base-padding;
+        }
+      }
+    }
+  }
+
+}
